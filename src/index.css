@@ -1,5 +1,26 @@
-@import-normalize;
+/* @import-normalize; */
 /* bring in normalize.css styles */
+@import './components/Profile/Profile.module.css';
+
+:root {
+  --body-bck-clr: rgba(9, 30, 58, 0.603);
+}
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+img {
+  display: block;
+}
 
 body {
   margin: 0;
@@ -8,6 +29,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  background-color: var(--body-bck-clr);
 }
 
 code {

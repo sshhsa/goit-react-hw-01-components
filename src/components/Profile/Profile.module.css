@@ -1,0 +1,81 @@
+:root {
+    --light-clr-1: #d3dfe1;
+    --light-clr-2: #b6c3c7;
+    --light-clr-3: #69797b;
+
+    --dark-clr-1: #054343;
+    --dark-clr-2: #0a8270;
+    --dark-clr-3: #052010;
+}
+
+.profile {
+    padding: 50px 25px;
+    width: 450px;
+
+    background-color: var(--dark-clr-3);
+}
+
+.description {
+    padding: 10px;
+
+    text-align: center;
+    background-image: linear-gradient(45deg, var(--light-clr-3), var(--dark-clr-2), var(--dark-clr-2), var(--dark-clr-3));
+}
+
+.description :first-child {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.name {
+    font-size: 36px;
+    font-weight: 600;
+    color: var(--light-clr-1);
+}
+
+.tag {
+    font-size: 24px;
+
+    color: var(--light-clr-2);
+}
+
+.location {
+    font-size: 28px;
+    color: var(--light-clr-2);
+}
+
+.stats {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    background-color: var(--dark-clr-2);
+}
+
+.stats-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 2px 0px 2px 2px;
+    padding: 5px;
+    width: 150px;
+
+    background-color: var(--dark-clr-3);
+}
+
+.stats :last-child {
+    margin-right: 2px;
+}
+
+.label {
+    font-size: 22px;
+
+    color: var(--light-clr-2);
+}
+
+.quantity {
+    font-size: 26px;
+
+    color: var(--light-clr-1);
+}
