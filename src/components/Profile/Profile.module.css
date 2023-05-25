@@ -9,8 +9,7 @@
 }
 
 .profile {
-    padding: 50px 25px;
-    width: 450px;
+    padding: 100px 200px;
 
     background-color: var(--dark-clr-3);
 }

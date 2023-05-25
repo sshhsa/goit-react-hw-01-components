@@ -1,8 +1,8 @@
 import React from 'react';
+import 'App.jsx';
 import './Profile.module.css';
-import user from './user.json';
 
-function Profile() {
+function Profile({username, tag, location, stats:{followers, views, likes}}) {
   return (
     <React.Fragment>
       <article className="profile">
@@ -10,34 +10,34 @@ function Profile() {
           <li>
             <img
               src="https://cdn-icons-png.flaticon.com/512/1077/1077012.png"
-              alt={user.username}
+              alt={username}
               className="avatar"
               width="200"
               height="200"
             />
           </li>
           <li>
-            <p className="name">{user.username}</p>
+            <p className="name">{username}</p>
           </li>
           <li>
-            <p className="tag">{user.tag}</p>
+            <p className="tag">{tag}</p>
           </li>
           <li>
-            <p className="location">{user.location}</p>
+            <p className="location">{location}</p>
           </li>
         </ul>
         <ul className="stats">
           <li className="stats-child">
             <span className="label">Followers</span>
-            <span className="quantity">{user.stats.followers}</span>
+            <span className="quantity">{followers}</span>
           </li>
           <li className="stats-child">
             <span className="label">Views</span>
-            <span className="quantity">{user.stats.views}</span>
+            <span className="quantity">{views}</span>
           </li>
           <li className="stats-child">
             <span className="label">Likes</span>
-            <span className="quantity">{user.stats.likes}</span>
+            <span className="quantity">{likes}</span>
           </li>
         </ul>
       </article>
