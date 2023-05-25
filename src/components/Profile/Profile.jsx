@@ -1,15 +1,18 @@
 import React from 'react';
 import 'App.jsx';
 import './Profile.module.css';
+import defaultImage from './IMG_7451.jpg';
 
-function Profile({username, tag, location, stats:{followers, views, likes}}) {
+function Profile(props) {
+  const { username = 'Alex Marynkevych', tag = 'sshhsa', location = 'Mykolayv, Ukraine', avatar = defaultImage, followers = 10000, views = 120000, likes = 275000 } = props;
+
   return (
     <React.Fragment>
       <article className="profile">
         <ul className="description">
           <li>
             <img
-              src="https://cdn-icons-png.flaticon.com/512/1077/1077012.png"
+              src={avatar}
               alt={username}
               className="avatar"
               width="200"
