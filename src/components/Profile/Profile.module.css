@@ -1,4 +1,12 @@
-@import '/src/index.css';
+:root {
+    --light-clr-1: #d3dfe1;
+    --light-clr-2: #b6c3c7;
+    --light-clr-3: #69797b;
+
+    --dark-clr-1: #054343;
+    --dark-clr-2: #0a8270;
+    --dark-clr-3: #052010;
+}
 
 .profile {
     padding: 100px 200px;

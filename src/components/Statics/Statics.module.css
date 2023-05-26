@@ -1,1 +1,16 @@
-@import '/src/index.css';
+:root {
+    --light-clr-1: #d3dfe1;
+    --light-clr-2: #b6c3c7;
+    --light-clr-3: #69797b;
+
+    --dark-clr-1: #054343;
+    --dark-clr-2: #0a8270;
+    --dark-clr-3: #052010;
+}
+
+.description {
+    padding: 10px;
+
+    text-align: center;
+    background-image: linear-gradient(45deg, var(--light-clr-3), var(--dark-clr-2), var(--dark-clr-2), var(--dark-clr-3));
+}

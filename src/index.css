@@ -1,18 +1,8 @@
 /* @import-normalize; */
 /* bring in normalize.css styles */
-@import './components/Profile/Profile.module.css';
-@import './components/Statics/Statics.module.css';
 
 :root {
   --body-bck-clr: rgba(11, 88, 46, 0.322);
-
-  --light-clr-1: #d3dfe1;
-  --light-clr-2: #b6c3c7;
-  --light-clr-3: #69797b;
-
-  --dark-clr-1: #054343;
-  --dark-clr-2: #0a8270;
-  --dark-clr-3: #052010;
 }
 
 *,

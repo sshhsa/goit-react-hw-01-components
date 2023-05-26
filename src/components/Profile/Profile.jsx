@@ -1,4 +1,5 @@
 import React from 'react';
+
 import 'App.jsx';
 import './Profile.module.css';
 import defaultImage from './IMG_7451.jpg';
