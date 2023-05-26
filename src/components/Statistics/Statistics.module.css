@@ -1,0 +1,42 @@
+:root {
+    --statistics-light-clr-1: #fab23d;
+    --statistics-light-clr-2: #ffc812;
+    --statistics-light-clr-3: #be860b;
+
+    --statistics-dark-clr-1: #000000;
+    --statistics-dark-clr-2: #262626;
+    --statistics-dark-clr-3: #383838;
+}
+
+.statistics {
+    padding: 10px;
+    margin: 50px;
+
+    text-align: center;
+    background-image: linear-gradient(45deg, var(--statistics-dark-clr-1), var(--statistics-dark-clr-2), var(--statistics-dark-clr-3), var(--statistics-dark-clr-3));
+}
+
+.title {
+    color: var(--statistics-light-clr-1);
+}
+
+.statList {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 50px;
+
+    color: var(--statistics-light-clr-2);
+    background-color: var(--statistics-light-clr-3);
+}
+
+.item {
+    padding: 10px 20px;
+    margin: 2px 0px 2px 2px;
+
+    background-color: var(--statistics-dark-clr-2);
+}
+
+.statList :last-child {
+    margin-right: 2px;
+}

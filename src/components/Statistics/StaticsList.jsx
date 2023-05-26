@@ -1,5 +1,5 @@
-import Statistics from "./Statics";
-import css from './Statics.module.css';
+import Statistics from "./Statistics";
+import css from './Statistics.module.css';
 
 function StaticsList({ items }) {
     return (<ul className={css.statList}>

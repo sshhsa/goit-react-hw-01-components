@@ -1,7 +1,7 @@
 import React from 'react';
 
 import 'App.jsx';
-import css from './Statics.module.css';
+import css from './Statistics.module.css';
 
 function Statistics() {
   // const [
