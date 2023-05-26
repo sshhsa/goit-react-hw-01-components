@@ -4,7 +4,7 @@ import './Profile.module.css';
 import defaultImage from './IMG_7451.jpg';
 
 function Profile(props) {
-  const { username = 'Alex Marynkevych', tag = 'sshhsa', location = 'Mykolayv, Ukraine', avatar = defaultImage, followers = 10000, views = 120000, likes = 275000 } = props;
+  const { username, tag, location, avatar = defaultImage, followers, views, likes } = props;
 
   return (
     <React.Fragment>
