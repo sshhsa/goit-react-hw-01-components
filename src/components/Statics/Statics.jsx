@@ -1,30 +1,34 @@
 import React from 'react';
 
 import 'App.jsx';
-import './Statics.module.css';
+import css from './Statics.module.css';
 
 function Statistics() {
+  // const [
+  //   { id, label, percentage }
+  // ] = props;
+
     return (
     <React.Fragment>
-      <section className="statistics">
-  <h2 className="title">Upload stats</h2>
+      <section className={css.statistics}>
+  <h2 className={css.title}>Upload stats</h2>
 
-  <ul className="stat-list">
-    <li className="item">
-      <span className="label">.docx</span>
-      <span className="percentage">4%</span>
+  <ul className={css.statList}>
+    <li className={css.item}>
+      <span className={css.label}>.docx</span>
+      <span className={css.percentage}>4%</span>
     </li>
-    <li className="item">
-      <span className="label">.mp3</span>
-      <span className="percentage">14%</span>
+    <li className={css.item}>
+      <span className={css.label}>.mp3</span>
+      <span className={css.percentage}>14%</span>
     </li>
-    <li className="item">
-      <span className="label">.pdf</span>
-      <span className="percentage">41%</span>
+    <li className={css.item}>
+      <span className={css.label}>.pdf</span>
+      <span className={css.percentage}>41%</span>
     </li>
-    <li className="item">
-      <span className="label">.mp4</span>
-      <span className="percentage">12%</span>
+    <li className={css.item}>
+      <span className={css.label}>.mp4</span>
+      <span className={css.percentage}>12%</span>
     </li>
   </ul>
 </section>

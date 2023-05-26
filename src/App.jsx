@@ -22,7 +22,9 @@ export function App () {
       <Statistics
         id={data.id}
         label={data.label}
+        percentage={data.percentage}
       />
+
       {/*
       <FriendList />
       <TransactionHistory /> */}
