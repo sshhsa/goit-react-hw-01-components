@@ -26,6 +26,7 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap;
 
     color: var(--statistics-light-clr-2);
     background-color: var(--statistics-light-clr-3);

@@ -1,6 +1,7 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-import 'App.js';
+import'App.js';
 import css from './Statistics.module.css';
 
 function Statistics({ title, stats }) {
@@ -21,5 +22,11 @@ function Statistics({ title, stats }) {
       </section>
   );
 };
+
+Statistics.propTypes = {
+  id: PropTypes.string,
+  label: PropTypes.string,
+  percentage: PropTypes.number
+}
 
 export default Statistics;
