@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import 'App.jsx';
+import 'App.js';
 import css from './Profile.module.css';
 import defaultImage from './IMG_7451.jpg';
 
@@ -9,7 +9,6 @@ function Profile(props) {
   const { username, tag, location, avatar = defaultImage, followers, views, likes } = props;
 
   return (
-    <React.Fragment>
       <article className={css.profile}>
         <ul className={css.description}>
           <li>
@@ -46,7 +45,6 @@ function Profile(props) {
           </li>
         </ul>
       </article>
-    </ React.Fragment>
   );
 };
 

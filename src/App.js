@@ -6,7 +6,7 @@ import user from './components/Profile/user.json';
 import Statistics from 'components/Statistics/Statistics';
 import data from './components/Statistics/data.json';
 
-export function App () {
+function App() {
   return (
     <div className="main-container">
       <Profile
@@ -19,15 +19,9 @@ export function App () {
         likes={user.stats.likes}
       />
 
-      <Statistics
-        id={data.id}
-        label={data.label}
-        percentage={data.percentage}
-      />
-
-      {/*
-      <FriendList />
-      <TransactionHistory /> */}
+      <Statistics title="Upload stats" stats={data} />
     </div>
   );
-};
+}
+
+export default App;
