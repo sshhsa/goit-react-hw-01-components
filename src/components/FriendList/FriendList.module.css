@@ -1,0 +1,54 @@
+:root {
+    --friendlist-light-clr-1: #e0d8cc;
+    --friendlist-light-clr-2: #daa969;
+    --friendlist-light-clr-3: #aa895f;
+
+    --friendlist-dark-clr-1: #708f96;
+    --friendlist-dark-clr-2: #364649;
+    --friendlist-dark-clr-3: #202020;
+
+    --friend-online: #32ca4b;
+    --friend-offline: #d44937;
+}
+
+.friendList {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+
+    gap: 10px;
+    margin-bottom: 50px;
+    padding: 0px 20px;
+
+    color: var(--friendlist-dark-clr-3);
+}
+
+.itemFriend {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    padding: 10px;
+    width: 300px;
+
+    border-radius: 2px;
+    background-color: var(--friendlist-dark-clr-1);
+}
+
+.statusFriend {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+
+    background-color: var(--friendlist-dark-clr-2);
+}
+
+.statusFriend.online {
+    background-color: var(--friend-online);
+}
+
+.statusFriend.offline {
+    background-color: var(--friend-offline);
+}
