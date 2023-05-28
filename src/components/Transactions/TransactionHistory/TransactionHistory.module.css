@@ -1,9 +1,47 @@
 :root {
-    --transaction-light-clr-1: #fab23d;
-    --transaction-light-clr-2: #ffc812;
-    --transaction-light-clr-3: #be860b;
+    --transaction-light-clr-1: #f1f1f1;
+    --transaction-light-clr-2: #315dd62d;
 
-    --transaction-dark-clr-1: #000000;
-    --transaction-dark-clr-2: #262626;
-    --transaction-dark-clr-3: #383838;
+    --transaction-dark-clr-1: #4110c7;
+    --transaction-dark-clr-2: #2d0697;
+    --transaction-dark-clr-3: #12043e;
+}
+
+/* Стилі для контейнера таблиці */
+.table-container {
+    width: 1000px;
+}
+
+/* Стилі для самої таблиці */
+.transactionHistory {
+    width: 1000px;
+    border-collapse: collapse;
+
+    margin: 50px 0px;
+}
+
+/* Стилі для заголовків стовпців */
+.transactionHistory th {
+    padding: 10px;
+    text-align: left;
+    font-weight: bold;
+    border-bottom: 1px solid var(--transaction-dark-clr-2);
+}
+
+/* Стилі для рядків таблиці */
+.transactionHistory tr {
+    color: var(--transaction-light-clr-1);
+    background-color: var(--transaction-light-clr-2);
+}
+
+/* Стилі для непарних рядків таблиці */
+.transactionHistory tr:nth-child(odd) {
+    color: var(--transaction-light-clr-1);
+    background-color: var(--transaction-dark-clr-1);
+}
+
+/* Стилі для комірок таблиці */
+.transactionHistory td {
+    padding: 10px;
+    border-bottom: 1px solid var(--transaction-light-clr-1);
 }
