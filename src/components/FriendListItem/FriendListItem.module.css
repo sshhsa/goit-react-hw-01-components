@@ -1,0 +1,44 @@
+:root {
+    --friendlist-light-clr-1: #e0d8cc;
+
+    --friendlist-dark-clr-1: #708f96;
+    --friendlist-dark-clr-2: #364649;
+
+    --friend-online: #21b339;
+    --friend-offline: #d44937;
+}
+
+.itemFriend {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    padding: 10px;
+    width: 300px;
+
+    border-radius: 2px;
+    color: var(--friendlist-light-clr-1);
+    background-color: var(--friendlist-dark-clr-1);
+}
+
+.statusFriendOnline {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+
+    box-shadow: 0px 0px 4px 1px rgb(0, 0, 0);
+
+    background-color: var(--friend-online);
+}
+
+.statusFriendOffline {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+
+    box-shadow: 0px 0px 4px 1px rgb(0, 0, 0);
+
+    background-color: var(--friend-offline);
+}
