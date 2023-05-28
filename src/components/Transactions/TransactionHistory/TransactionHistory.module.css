@@ -7,37 +7,46 @@
     --transaction-dark-clr-3: #12043e;
 }
 
-/* Стилі для контейнера таблиці */
 .table-container {
     width: 1000px;
 }
 
-/* Стилі для самої таблиці */
 .transactionHistory {
-    width: 1000px;
-    border-collapse: collapse;
-
     margin: 50px 0px;
+
+    width: 1000px;
+
+    text-align: center;
+    border-collapse: collapse;
 }
 
-/* Стилі для заголовків стовпців */
 .transactionHistory th {
     padding: 10px;
-    text-align: left;
-    font-weight: bold;
+
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
     border-bottom: 1px solid var(--transaction-dark-clr-2);
+
+    color: var(--transaction-light-clr-1);
+    background-color: var(--transaction-dark-clr-3);
 }
 
-/* Стилі для рядків таблиці */
 .transactionHistory tr {
+    font-size: 30px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+
     color: var(--transaction-light-clr-1);
     background-color: var(--transaction-light-clr-2);
 }
 
-/* Стилі для непарних рядків таблиці */
 .transactionHistory tr:nth-child(odd) {
-    color: var(--transaction-light-clr-1);
-    background-color: var(--transaction-dark-clr-1);
+    color: var(--transaction-dark-clr-3);
+    background-color: var(--transaction-light-clr-1);
 }
 
 /* Стилі для комірок таблиці */

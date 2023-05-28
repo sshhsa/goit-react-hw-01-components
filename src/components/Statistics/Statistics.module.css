@@ -36,6 +36,10 @@
 }
 
 .item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
     padding: 10px 20px;
     margin: 2px 0px 2px 2px;
 
@@ -46,4 +50,9 @@
 
 .statList :last-child {
     margin-right: 2px;
+}
+
+.label {
+    font-size: 28px;
+    color: var(--statistics-light-clr-1);
 }
