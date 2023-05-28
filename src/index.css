@@ -1,8 +1,14 @@
-/* @import-normalize; */
-/* bring in normalize.css styles */
-
 :root {
-  --body-bck-clr: rgba(11, 88, 46, 0.322);
+  --light-clr-1: #f1f1f1;
+  --light-clr-2: #cfc5fc;
+  --light-clr-3: #b3a9a3;
+
+  --dark-clr-1: #315dd62d;
+  --dark-clr-2: #12043e;
+  --dark-clr-3: #202020;
+
+  --accent-clr-1: #263ea8;
+  --body-bck-clr: rgba(11, 12, 88, 0.322);
 }
 
 *,

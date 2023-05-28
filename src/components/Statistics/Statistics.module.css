@@ -1,12 +1,4 @@
-:root {
-    --statistics-light-clr-1: #fab23d;
-    --statistics-light-clr-2: #ffc812;
-    --statistics-light-clr-3: #be860b;
-
-    --statistics-dark-clr-1: #000000;
-    --statistics-dark-clr-2: #262626;
-    --statistics-dark-clr-3: #383838;
-}
+@import 'index.css';
 
 .statistics {
     padding: 10px;
@@ -14,13 +6,13 @@
     border-radius: 2px;
 
     text-align: center;
-    background-image: linear-gradient(45deg, var(--statistics-dark-clr-1), var(--statistics-dark-clr-2), var(--statistics-dark-clr-3), var(--statistics-dark-clr-3));
+    background-image: linear-gradient(45deg, var(--dark-clr-1), var(--dark-clr-2));
 }
 
 .title {
-    color: var(--statistics-light-clr-1);
-
     margin-bottom: 20px;
+
+    color: var(--light-clr-2);
 }
 
 .statList {
@@ -31,8 +23,8 @@
 
     border-radius: 2px;
 
-    color: var(--statistics-light-clr-2);
-    background-color: var(--statistics-light-clr-3);
+    color: var(--light-clr-2);
+    background-color: var(--dark-clr-2);
 }
 
 .item {
@@ -44,8 +36,6 @@
     margin: 2px 0px 2px 2px;
 
     border-radius: 2px;
-
-    background-color: var(--statistics-dark-clr-2);
 }
 
 .statList :last-child {
@@ -54,5 +44,5 @@
 
 .label {
     font-size: 28px;
-    color: var(--statistics-light-clr-1);
+    color: var(--light-clr-3);
 }
