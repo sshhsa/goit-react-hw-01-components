@@ -1,0 +1,9 @@
+:root {
+    --transaction-light-clr-1: #fab23d;
+    --transaction-light-clr-2: #ffc812;
+    --transaction-light-clr-3: #be860b;
+
+    --transaction-dark-clr-1: #000000;
+    --transaction-dark-clr-2: #262626;
+    --transaction-dark-clr-3: #383838;
+}
