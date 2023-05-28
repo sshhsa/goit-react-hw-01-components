@@ -1,11 +1,4 @@
-:root {
-    --profile-light-clr-1: #d3dfe1;
-    --profile-light-clr-2: #b6c3c7;
-    --profile-light-clr-3: #69797b;
-
-    --profile-dark-clr-1: #0a8270;
-    --profile-dark-clr-2: #052010;
-}
+@import 'index.css';
 
 .profile {
     padding: 10px;
@@ -13,12 +6,15 @@
     max-width: 400px;
 
     border-radius: 2px;
-    background-color: var(--profile-dark-clr-2);
+    background-color: var(--dark-clr-2);
 }
 
 @media screen and (max-width: 400px) {
     .profile {
         width: 100%;
+
+        margin-left: 10px;
+        margin-right: 10px;
     }
 }
 
@@ -29,7 +25,7 @@
     border-top-right-radius: 2px;
 
     text-align: center;
-    background-image: linear-gradient(45deg, var(--profile-light-clr-3), var(--profile-dark-clr-1), var(--profile-dark-clr-1), var(--profile-dark-clr-2));
+    background-image: linear-gradient(45deg, var(--accent-clr-1), var(--light-clr-3), var(--dark-clr-2));
 }
 
 .description :first-child {
@@ -40,18 +36,20 @@
 .name {
     font-size: 36px;
     font-weight: 600;
-    color: var(--profile-light-clr-1);
 }
 
 .tag {
     font-size: 24px;
-
-    color: var(--profile-light-clr-2);
 }
 
 .location {
     font-size: 28px;
-    color: var(--profile-light-clr-2);
+}
+
+.name,
+.tag,
+.location {
+    color: var(--dark-clr-3);
 }
 
 .stats {
@@ -61,7 +59,8 @@
 
     border-bottom-left-radius: 2px;
     border-bottom-right-radius: 2px;
-    background-color: var(--profile-dark-clr-1);
+
+    background-image: linear-gradient(160deg, var(--dark-clr-3), var(--accent-clr-1));
 }
 
 .statsChild {
@@ -73,7 +72,7 @@
     padding: 5px;
     width: 150px;
 
-    background-color: var(--profile-dark-clr-2);
+    background-color: var(--dark-clr-2);
 }
 
 .stats :last-child {
@@ -83,11 +82,11 @@
 .label {
     font-size: 22px;
 
-    color: var(--profile-light-clr-2);
+    color: var(--light-clr-2);
 }
 
 .quantity {
     font-size: 26px;
 
-    color: var(--profile-light-clr-1);
+    color: var(--light-clr-1);
 }

@@ -1,3 +1,5 @@
+@import 'index.css';
+
 .friendList {
     display: flex;
     justify-content: space-evenly;
@@ -6,7 +8,10 @@
 
     gap: 25px;
     margin-bottom: 50px;
-    padding: 0px 20px;
+    padding: 20px;
 
     max-width: 900px;
+    border-radius: 2px;
+
+    background-image: linear-gradient(150deg, var(--dark-clr-2), var(--dark-clr-1));
 }

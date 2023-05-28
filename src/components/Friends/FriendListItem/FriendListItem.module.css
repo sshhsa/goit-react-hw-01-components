@@ -1,9 +1,6 @@
+@import 'index.css';
+
 :root {
-    --friendlist-light-clr-1: #e0d8cc;
-
-    --friendlist-dark-clr-1: #708f96;
-    --friendlist-dark-clr-2: #364649;
-
     --friend-online: #21b339;
     --friend-offline: #d44937;
 }
@@ -17,8 +14,10 @@
     width: 300px;
 
     border-radius: 2px;
-    color: var(--friendlist-light-clr-1);
-    background-color: var(--friendlist-dark-clr-1);
+    border: 2px dashed var(--accent-clr-1);
+
+    color: var(--dark-clr-2);
+    background-color: var(--light-clr-2);
 }
 
 .statusFriendOnline {
